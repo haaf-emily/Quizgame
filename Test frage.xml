@@ -1,9 +1,0 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
-<Frage>
-  <text>Was versteht man unter primitiven (Basis-) Datentypen?</text>
-  <Antwort1>Gebrochene Zahlen</Antwort1>
-  <Antwort2>Natürliche Zahlen</Antwort2>
-  <Antwort3>Reelle Zahlen</Antwort3>
-  <Antwort4>Ganzzahlige Zahltypen</Antwort4>
-</Frage>
