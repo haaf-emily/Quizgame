@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<questions>
+	<question>
+		<text>Was versteht man unter primitiven (Basis-) Datentypen?</text>
+		<answer1>Gebrochene Zahlen</answer1>
+		<answer2>Natürliche Zahlen</answer2>
+		<answer3>Reelle Zahlen</answer3>
+		<answer4>Ganzzahlige Zahltypen</answer4>
+	</question>
+	<question>
+		<text>Wie weit geht der Wertebereich vom Datentyp byte?</text>
+		<answer1>  -129 … 128</answer1>
+		<answer2> -127 … 126</answer2>
+		<answer3>    -130 … 129</answer3>
+		<answer4>-128 … 127</answer4>
+	</question>
+	<question>
+		<text>a</text>
+		<answer1>b</answer1>
+		<answer2>c</answer2>
+		<answer3>e</answer3>
+		<answer4>f</answer4>
+	</question>
+</questions>
