@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>                                          <!-- Antwort 4 immer korrekt -->
+  <question1>
+    <text>Was versteht man unter primitiven (Basis-) Datentypen?</text>
+    <answer1>Gebrochene Zahlen</answer1>
+    <answer2>Natürliche Zahlen</answer2>
+    <answer3>Reelle Zahlen</answer3>
+    <answer4>Ganzzahlige Zahltypen</answer4> 
+  </question1>
+  <question2>
+    <text>Wie weit geht der Wertebereich vom Datentyp byte?</text>
+    <answer1>-129 … 128</answer1>
+    <answer2>-127 … 126</answer2>
+    <answer3>-130 … 129</answer3>
+    <answer4>-128 … 127</answer4> 
+  </question2>
+  <question3>
+    <text>Wie viele Ziffern benötigt man bei der Hexadezimalnotation?</text>
+    <answer1>16</answer1>
+    <answer2>14</answer2>
+    <answer3>12</answer3>
+    <answer4>15</answer4> 
+  </question3>
+  <question4>
+    <text>Hexadezimalnotation: statt 13 verwendet man?</text>
+    <answer1>A</answer1>
+    <answer2>B</answer2>
+    <answer3>E</answer3>
+    <answer4>D</answer4> 
+  </question4>
+  <question5>
+    <text>Aus wie viel bit besteht der ASCII-Code?</text>
+    <answer1>129</answer1>
+    <answer2>128</answer2>
+    <answer3>122</answer3>
+    <answer4>127</answer4> 
+  </question5>
+  <question6>
+    <text>Welche Buchstaben befinden sich hinter diesen Ziffern im ASCII-Code: 65 – 90?</text>
+    <answer1>0-9</answer1>
+    <answer2>a-g</answer2>
+    <answer3>a-z</answer3>
+    <answer4>A-Z</answer4> 
+  </question6>
+  <question7>
+    <text>Was versteht man hinter den Modifier „private“?</text>
+    <answer1>Der Zugriff bei anderen Klassen wird ermöglicht.</answer1>
+    <answer2>Der Zugriff auf unendlich vielen Klasse wird ermöglicht.</answer2>
+    <answer3>Der Zugriff auf paar anderen Klassen wird ermöglicht.</answer3>
+    <answer4>Der Zugriff nur von der eigenen Klasse wird ermöglicht.</answer4> 
+  </question7>
+  <question8>
+    <text>Was versteht man unter dem lateinischen Begriff: recurrere?</text>
+    <answer1>Wiederholen</answer1>
+    <answer2>Fortfahren</answer2>
+    <answer3>Gegenrichtung</answer3>
+    <answer4>Zurücklaufen</answer4> 
+  </question8>
+  <question9>
+    <text>Welches ist die richtige Gauß-Formel?</text>
+    <answer1>Summe(n) = n + n+1 / 2</answer1>
+    <answer2>Summe(n) = n * n+2 / 2</answer2>
+    <answer3>Summe(n) = n / n+1 / 2</answer3>
+    <answer4>Summe(n) = n * n+1 / 2</answer4> 
+  </question9>
+  <question10>
+    <text>Was versteht man unter Referenzdatentypen?</text>
+    <answer1>Enthalten die Daten selbst.</answer1>
+    <answer2>Enthalten die Daten selbst, auf den Speicherort der Daten.</answer2>
+    <answer3>Enthalten nur einen Speicherort.</answer3>
+    <answer4>Enthalten nicht die Daten selbst, sondern einen Verweis.</answer4> 
+  </question10>
+ 
+</questions>
