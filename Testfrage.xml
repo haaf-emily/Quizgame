@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question>
+  <text>Was versteht man unter primitiven (Basis-) Datentypen?</text>
+  <request1>Gebrochene Zahlen</request1>
+  <request2>Natürliche Zahlen</request2>
+  <request3>Reelle Zahlen</request3>
+  <request4>Ganzzahlige Zahltypen</request4>
+</question>
