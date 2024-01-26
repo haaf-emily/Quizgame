@@ -1,39 +1,30 @@
-import  testFragen
+""" import xml.etree.ElementTree as ET
+import xmltodict
+
+# Öffnen Sie die XML-Datei
+with open("testFragen.xml") as file:
+    xml_string = file.read()
+
+# Konvertieren Sie XML in ein Python-Dictionary
+python_dict = xmltodict.parse(xml_string)
+
+# Iterieren Sie über die Fragen und drucken Sie den Text jeder Frage
+questions = python_dict['questions']['question']
+for question in questions:
+    print("Frage:", question['text'])
+
+# Drucken Sie den allgemeinen Text des Quizgames
+print("Quizgame: Wer wird Informatiker?")
+print(python_dict['questions']['text']) """
+
 import xml.etree.ElementTree as ET
-class answerverification:
+import xmltodict
 
-    def parse_xml(testFragen):
-        tree = ET.parse(testFragen)
-        root = tree.getroot()
-        
-        questions = []
-        
-        for question_elem in root.findall('question'):
-            text = question_elem.find('text').text
-            answers = [answer.text for answer in question_elem.findall('answer1')]
-            
-            question = {'text': text, 'answers': answers}
-            questions.append(question)
-        
-        return questions
-
-    if __name__ == "__main__":
-        file_path = "testFragen.xml"
-        questions = parse_xml(file_path)
-        
-        for i, question in enumerate(questions, 1):
-            print(f"\nFrage {i}: {question['text']}")
-            print("Antworten:")
-            for answer in question['answers']:
-                print(f"  - {answer}")
-
-    from testFagen.xml import parse_xml
-
-    file_path = "deine_xml_datei.xml"
-    questions = parse_xml(file_path)
-
-    for i, question in enumerate(questions, 1):
-        print(f"\nFrage {i}: {question['text']}")
-        print("Antworten:")
-        for answer in question['answers']:
-            print(f"  - {answer}")
+file=open(testFragen.xml)
+xml_string=file.read()
+python_dict=xmltodict.parse(xml_string)
+print(python_dict['questions']['question'])
+file.close()
+    
+print("Quizgame: Wer wird Informatiker?")
+print(python_dict['text'])
