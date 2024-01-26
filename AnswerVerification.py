@@ -19,8 +19,9 @@ print(python_dict['questions']['text']) """
 
 import xml.etree.ElementTree as ET
 import xmltodict
+import test
 
-file=open(testFragen.xml)
+file=open("testFragen.xml")
 xml_string=file.read()
 python_dict=xmltodict.parse(xml_string)
 print(python_dict['questions']['question'])
