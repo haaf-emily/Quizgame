@@ -2,10 +2,10 @@
 <questions>                                          <!-- Antwort 4 immer korrekt -->
   <question1>
     <text>Was versteht man unter primitiven (Basis-) Datentypen?</text>
-    <answer1>Gebrochene Zahlen</answer1>
-    <answer2>Natürliche Zahlen</answer2>
-    <answer3>Reelle Zahlen</answer3>
-    <answer4>Ganzzahlige Zahltypen</answer4> 
+      <answer1>Gebrochene Zahlen</answer1>
+      <answer2>Natürliche Zahlen</answer2>
+      <answer3>Reelle Zahlen</answer3>
+      <answer4>Ganzzahlige Zahltypen</answer4> 
   </question1>
   <question2>
     <text>Wie weit geht der Wertebereich vom Datentyp byte?</text>
