@@ -1,5 +1,11 @@
 import xmltodict
 import random
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+
+#Schnittstelle Python/typescript
+app = Flask(__name__)
+CORS(app,supports_credentials=True)
 
 file = open("fragen.xml", encoding="utf-8")
 xml_string = file.read()
@@ -49,6 +55,9 @@ masteranswer= questionOutput(i=1)
 responseCheck(masteranswer)
 file.close() 
 
+#Schnittstelle Python/typescript
+if __name__ == '__main__':
+    app.run(port=5000)
 
 
 """ import xmltodict
