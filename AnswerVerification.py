@@ -13,6 +13,104 @@ python_dict = xmltodict.parse(xml_string)
 
 question_key = None
 
+
+@app.route('/api/questionOutput', methods=['GET'])
+def questionOutput():
+    i = 1
+    global question_key
+    #data = request.json  # Zugriff auf die JSON-Daten der Anfrage
+    message = 'Hallo zu Wer wird Informatiker?'
+    #return jsonify(message= 'Hello')
+    # Fragen mit Antworten abrufen
+    # Frage nach dem aktuellen Wert von i
+    question_key = f'question{(i)}'
+    # Überprüfen, ob der Schlüssel im Dictionary vorhanden ist
+    if question_key in python_dict['questions']:
+         #print(python_dict['questions'][question_key]['text'])
+         questiontext= python_dict['questions'][question_key]['text']
+         #return jsonify(question = questiontext)
+    else:
+        print(f'Fehler: Der Schlüssel {question_key} wurde nicht gefunden.')
+    # Dynamische Antworten durchlaufen
+    numberanswer = 0
+    for j in random.sample(range(1, 5),4):
+        # Frage nach dem aktuellen Wert von i
+        answer_key = f'answer{(j)}'
+        numberanswer += 1
+        
+        # Überprüfen, ob der Schlüssel im Dictionary vorhanden ist
+        if answer_key in python_dict['questions'][question_key]:
+            # Ausgabe der Antworten und dient zur Antwortüberprüfung
+            #print(f"{numberanswer} {python_dict['questions'][question_key][answer_key]}" )
+            answer = python_dict['questions'][question_key][answer_key]
+        else:
+            print(f'Fehler: Der Schlüssel {answer_key} wurde nicht gefunden.')
+    
+    data = {
+            'message': message,
+            'question': questiontext,
+            'answer': answer
+    }
+    return jsonify(data)
+      
+
+
+#questionOutput(1)
+if __name__ == '__main__':
+    app.run(port=5000)
+
+
+
+
+
+
+""" @app.route('/api/get_question', methods=['GET'])
+def get_question():
+    i = request.args.get('i', type=int)
+    return jsonify({'question': questionOutput(i)})
+
+@app.route('/api/check_response', methods=['POST'])
+def check_response():
+    user_input = request.json['user_input']
+    masteranswer = request.json['masteranswer']
+    return jsonify({'result': responseCheck(user_input, masteranswer)})
+
+def questionOutput(i):
+    global question_key
+    # Annahme: Der Wert von i sollte eine gültige Frage repräsentieren
+    question_key = f'question{(i)}'
+    if question_key in python_dict['questions']:
+        return python_dict['questions'][question_key]
+    else:
+        return {'error': f'Der Schlüssel {question_key} wurde nicht gefunden.'}
+
+def responseCheck(user_input, masteranswer):
+    respons_key = f'answer{(user_input)}'
+    # Überprüfen, ob die Nutzereingabe mit den erwarteten Antworten übereinstimmt
+    if respons_key in masteranswer and masteranswer[respons_key] == True:
+        return "Richtig! Die Antwort ist korrekt."
+    else:
+        return "Falsch! Die Antwort ist nicht korrekt." """
+
+
+
+""" 
+# Von Emily 
+import xmltodict
+import random
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+
+#Schnittstelle Python/typescript
+app = Flask(__name__)
+CORS(app,supports_credentials=True)
+
+file = open("fragen.xml", encoding="utf-8")
+xml_string = file.read()
+python_dict = xmltodict.parse(xml_string)
+
+question_key = None
+
 def questionOutput(i):
     global question_key
     # Fragen mit Antworten abrufen
@@ -34,8 +132,7 @@ def questionOutput(i):
         if answer_key in python_dict['questions'][question_key]:
             # Ausgabe der Antworten und dient zur Antwortüberprüfung
             print(f"{numberanswer} {python_dict['questions'][question_key][answer_key]}" )
-            if j==5:
-                return python_dict['questions'][question_key][answer_key]
+            
         else:
             print(f'Fehler: Der Schlüssel {answer_key} wurde nicht gefunden.')
 
@@ -58,7 +155,7 @@ file.close()
 #Schnittstelle Python/typescript
 if __name__ == '__main__':
     app.run(port=5000)
-
+ """
 
 """ import xmltodict
 import random
