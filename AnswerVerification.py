@@ -42,11 +42,7 @@ def questionOutput():
         
         # Überprüfen, ob der Schlüssel im Dictionary vorhanden ist
         if answer_key in python_dict['questions'][question_key]:
-            # Ausgabe der Antworten und dient zur Antwortüberprüfung
-            #print(f"{numberanswer} {python_dict['questions'][question_key][answer_key]}" )
-            #answer = python_dict['questions'][question_key][answer_key]
-
-            # Ausgabe der Antworten
+            # Übermittlungswerte für die Buttons
             if numberanswer==1:
                 answer1=python_dict['questions'][question_key][answer_key]
             elif numberanswer==2:
@@ -86,6 +82,12 @@ def responseCheck():
     # Nur den Wert ("value") ausgeben
     answer = data.get('selectedAnswer', None)   # Name answer kannst du ändern
     answer= f'{answer}'
+
+    # Antwortüberprüfung
+    if answer==python_dict['questions'][question_key]['answer4']:
+        correct="Richtig"
+    else:
+        correct="Falsch"
     print('Value:', answer)    #   Ausgabe in Terminal Value: {'ant1': ' Reelle Zahlen'}
     
     return jsonify(result='Data processed successfully')
