@@ -40,16 +40,25 @@ def questionOutput():
         
         # Überprüfen, ob der Schlüssel im Dictionary vorhanden ist
         if answer_key in python_dict['questions'][question_key]:
-            # Ausgabe der Antworten und dient zur Antwortüberprüfung
-            #print(f"{numberanswer} {python_dict['questions'][question_key][answer_key]}" )
-            answer = python_dict['questions'][question_key][answer_key]
+            # Ausgabe der Antworten
+            if numberanswer==1:
+                answer1=python_dict['questions'][question_key][answer_key]
+            elif numberanswer==2:
+                answer2=python_dict['questions'][question_key][answer_key]
+            elif numberanswer==3:
+                answer3=python_dict['questions'][question_key][answer_key]
+            else:
+                answer4=python_dict['questions'][question_key][answer_key]
         else:
             print(f'Fehler: Der Schlüssel {answer_key} wurde nicht gefunden.')
     
     data = {
             'message': message,
             'question': questiontext,
-            'answer': answer
+            'answer1': answer1,
+            'answer2': answer2,
+            'answer3': answer3,
+            'answer4': answer4,
     }
     return jsonify(data)
       
