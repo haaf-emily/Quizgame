@@ -19,7 +19,7 @@ def questionOutput():
     i = 1
     global question_key
     #data = request.json  # Zugriff auf die JSON-Daten der Anfrage
-    message = 'Hallo zu Wer wird Informatiker?'
+    message = 'Herzlich Willkommen zu Wer wird Informatiker?'
     #return jsonify(message= 'Hello')
     # Fragen mit Antworten abrufen
     # Frage nach dem aktuellen Wert von i
@@ -31,6 +31,8 @@ def questionOutput():
          #return jsonify(question = questiontext)
     else:
         print(f'Fehler: Der Schlüssel {question_key} wurde nicht gefunden.')
+
+
     # Dynamische Antworten durchlaufen
     numberanswer = 0
     for j in random.sample(range(1, 5),4):
@@ -40,6 +42,10 @@ def questionOutput():
         
         # Überprüfen, ob der Schlüssel im Dictionary vorhanden ist
         if answer_key in python_dict['questions'][question_key]:
+            # Ausgabe der Antworten und dient zur Antwortüberprüfung
+            #print(f"{numberanswer} {python_dict['questions'][question_key][answer_key]}" )
+            #answer = python_dict['questions'][question_key][answer_key]
+
             # Ausgabe der Antworten
             if numberanswer==1:
                 answer1=python_dict['questions'][question_key][answer_key]
@@ -55,6 +61,7 @@ def questionOutput():
     data = {
             'message': message,
             'question': questiontext,
+            #'answer': answer,
             'answer1': answer1,
             'answer2': answer2,
             'answer3': answer3,
@@ -62,7 +69,48 @@ def questionOutput():
     }
     return jsonify(data)
       
+@app.route('/api/responseCheck', methods=['POST', 'OPTIONS'])
+def responseCheck():
+    if request.method == 'OPTIONS':
+        # Antwort auf OPTIONS-Anfrage ohne Daten
+    
+        return ' ', 204
 
+
+    data = request.json  # Zugriff auf die JSON-Daten der Anfrage
+    print('Received data:', data)
+    
+
+    # Lösungen von ChatGpt
+    
+    # Nur den Wert ("value") ausgeben
+    answer = data.get('selectedAnswer', None)   # Name answer kannst du ändern
+    answer= f'{answer}'
+    print('Value:', answer)    #   Ausgabe in Terminal Value: {'ant1': ' Reelle Zahlen'}
+    
+    return jsonify(result='Data processed successfully')
+    
+    # Hier kannst du die übermittelten Daten weiterverarbeiten
+
+    
+    
+    
+    
+    
+    """ #return jsonify(result='Data processed successfully')
+    if value is not None:
+        print('Value:', value)
+        result=f'Data processed successfully. Received value: {value}'
+        value = f'{value}'
+        response_data = {
+            'result': result,
+            'answer': value
+        }
+        
+        return jsonify(response_data) 
+    else:
+        print('No value found in received data')
+        return jsonify(error='No value found in the received data'), 400  """
 
 #questionOutput(1)
 if __name__ == '__main__':
