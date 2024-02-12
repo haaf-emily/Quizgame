@@ -6,7 +6,7 @@ from flask_cors import CORS
 #Schnittstelle Python/typescript
 app = Flask(__name__)
 CORS(app,supports_credentials=True)
-
+# Einlesen von der XML Datei
 file = open("fragen.xml", encoding="utf-8")
 xml_string = file.read()
 python_dict = xmltodict.parse(xml_string)
