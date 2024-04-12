@@ -3,7 +3,7 @@ In jedem Unterbereich werden die Punkte (gerne auch Links ins GIT) erklärt, wie
 Alle Kriterien betreffen nur die Projektarbeit. Beweismaterial kommt aus dem Gruppenprojekt.
 
 <u>Gruppenmitglieder</u>: 
-Emily Haaf (4213003), Alexandra Altun (4305501) & Theresia Deubert (5922305)
+Emily Haaf, Alexandra Altun  & Theresia Deubert
 
 Unser **Git Account** für das Projekt: https://github.com/haaf-emily/Quizgame 
 
