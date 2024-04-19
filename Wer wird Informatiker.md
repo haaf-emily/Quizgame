@@ -64,7 +64,9 @@ Wir haben die Antwortüberprüfung mit einem Stringvergleich gelöst. Dieser erf
 
 Die verwendeten Strukturierte Datentypen sind eine List und ein Dictionary.
 Die Liste wurde von uns benötigt um keine Wiederholungen in den Fragen zu haben.
+
 ![Pasted image 20240225144342](https://github.com/haaf-emily/Quizgame/assets/152873694/196b8011-2080-436d-a110-0c4263ef1212)
+
 
 Das Dictionary wurde bei uns verwendet um die ganzen Fragen und Antworten zu speichern und mit ihnen zu arbeiten. 
 
@@ -81,6 +83,7 @@ Wir sind auf diese Stelle im Code besonders stolz, da sie alles abbildet was wir
 
 ### Sie können ein größeres Programm selbständig entwerfen, programmieren und auf Funktionsfähigkeit testen (Das Projekt im Team) (10)
 <!-- Anhand von commits zeigen, wie jeder im Projekt einen Beitrag geleistet hat -->
+
 ![Pasted image 20240225150806](https://github.com/haaf-emily/Quizgame/assets/152873694/7f540f73-8bf5-4942-a9bc-aedcfd39a783)
 
 Das Projekt wurde von der gesamten Gruppe zu gleichen Teilen bearbeitet. Dabei haben wir die ersten Überlegungen aufgeteilt in die drei Teile: Python Konzept, Schnittstellenfindung und Oberflächen Design.
@@ -121,13 +124,17 @@ Diese Liste benötigen wir  um  das erste Element aus der erstellten Liste zuneh
 
 ### Die Studierenden können eine Entwicklungsumgebung verwenden um Programme zu erstellen (10)
 Wir haben in unserem Projekt folgende Umgebungen verwendet:
-- Git  ![Pasted image 20240222114152](https://github.com/haaf-emily/Quizgame/assets/152873694/97bc6272-f023-4f2c-b143-004618720b1d)
+- Git
+  ![Pasted image 20240222114152](https://github.com/haaf-emily/Quizgame/assets/152873694/97bc6272-f023-4f2c-b143-004618720b1d)
 
-- Visual Studio Code ![Pasted image 20240222114210](https://github.com/haaf-emily/Quizgame/assets/152873694/93806d99-49fb-45ee-a5cc-1c45de3236c0)
+- Visual Studio Code
+  ![Pasted image 20240222114210](https://github.com/haaf-emily/Quizgame/assets/152873694/93806d99-49fb-45ee-a5cc-1c45de3236c0)
 
-- Anaconda  ![Pasted image 20240222114332](https://github.com/haaf-emily/Quizgame/assets/152873694/aa8295e1-a181-4612-9aff-4e994dba435b)
+- Anaconda
+  ![Pasted image 20240222114332](https://github.com/haaf-emily/Quizgame/assets/152873694/aa8295e1-a181-4612-9aff-4e994dba435b)
 
-- SourceTree  ![Pasted image 20240222114449](https://github.com/haaf-emily/Quizgame/assets/152873694/49efb942-7e5d-4a6c-aa57-1278ae5aca69)
+- SourceTree
+  ![Pasted image 20240222114449](https://github.com/haaf-emily/Quizgame/assets/152873694/49efb942-7e5d-4a6c-aa57-1278ae5aca69)
 
 
 Die Verwendung der verschiedenen Entwicklungsumgebungen können wir nicht objektiv darstellen bzw. begründen.
@@ -173,13 +180,18 @@ Wir haben unsere Wissen mit folgenden Bibliotheken und Frameworks erweiter:
 - Schnittstellenprogrammierung: 
 	 Wir sind stolz das unsere Schnittstelle funktioniert, da uns React Schwierigkeiten  bereitet hat. Unsere Lösung war von Python auf TypeScript -->Flask und von TypeScript auf Python --> Felch. Wir haben sehr lange versucht diese Schnittstelle hauptsächlich in Python zu programmieren, dies hat jedoch nicht funktioniert so das wir auf unsere jetzige Lösung zurück greifen mussten. 
 	 
-	Einbindung in Python: 	![Pasted image 20240222120453](https://github.com/haaf-emily/Quizgame/assets/152873694/a082296d-45c3-45c4-bf0f-d45f403ca5a6)
+Einbindung in Python:
+
+![Pasted image 20240222120453](https://github.com/haaf-emily/Quizgame/assets/152873694/a082296d-45c3-45c4-bf0f-d45f403ca5a6)
 
 	 
-	Schnittstelle in TypeScript:	![Pasted image 20240222120532](https://github.com/haaf-emily/Quizgame/assets/152873694/e777dba6-0a2e-402a-be8d-059a161ed4e5)
+Schnittstelle in TypeScript:
+
+![Pasted image 20240222120532](https://github.com/haaf-emily/Quizgame/assets/152873694/e777dba6-0a2e-402a-be8d-059a161ed4e5)
 
 - Benutzung Framework React: Wir haben uns als Gruppe bewusst dazu entschieden ein Framework zu verwenden und den Umgang mit einem Webframework zu lernen. Diese ersten Kenntnisse werden uns im späteren Verlauf des Studiums nützlich sein. Da wir vorher keine Berührungspunkte damit hatten sieht unser Endergebnis gut aus. In unserem Projekt haben wir den Fokus auf das Backend gelegt und hatten wir Schwierigkeiten bei der Installation des Frameworks.
-  	![Pasted image 20240222121240](https://github.com/haaf-emily/Quizgame/assets/152873694/27d8b74d-daa3-454d-af4c-f307b9e8fb03)
+
+  ![Pasted image 20240222121240](https://github.com/haaf-emily/Quizgame/assets/152873694/27d8b74d-daa3-454d-af4c-f307b9e8fb03)
 
 - Die weiteren Punkte auf die wir als Gruppe stolz sind werden oben beschrieben und erklärt 
 	 --> z.B Stringverarbeitung und Dictionary
