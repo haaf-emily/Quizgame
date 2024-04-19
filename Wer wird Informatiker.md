@@ -9,10 +9,15 @@ Unser **Git Account** für das Projekt: https://github.com/haaf-emily/Quizgame
 
 Zur vereinfachten Abbildung und Beweisführung der verwenden Codebestandteile Beziehen sich alle Aussagen ohne separate Abbildungen auf die Folgenden Bilder:
 
-![[Pasted image 20240225143325.png]]
+![Pasted image 20240225143325](https://github.com/haaf-emily/Quizgame/assets/152873694/95cf4c9c-29af-4c0e-b3a3-5cd56c2a571b)
+
 
 ![[Pasted image 20240225143337.png]]
+![Pasted image 20240225143337](https://github.com/haaf-emily/Quizgame/assets/152873694/92419f3e-397e-43c3-8003-21e292550526)
+
 ![[Pasted image 20240225143406.png]]
+![Pasted image 20240225143406](https://github.com/haaf-emily/Quizgame/assets/152873694/d3195ad2-d0be-49ac-bdef-df4192de4ba1)
+
 
 ## FACHKOMPETENZ (40 Punkte)
 
@@ -63,11 +68,15 @@ Wir haben die Antwortüberprüfung mit einem Stringvergleich gelöst. Dieser erf
 Die verwendeten Strukturierte Datentypen sind eine List und ein Dictionary.
 Die Liste wurde von uns benötigt um keine Wiederholungen in den Fragen zu haben.
 ![[Pasted image 20240225144342.png]]
+![Pasted image 20240225144342](https://github.com/haaf-emily/Quizgame/assets/152873694/196b8011-2080-436d-a110-0c4263ef1212)
+
 Das Dictionary wurde bei uns verwendet um die ganzen Fragen und Antworten zu speichern und mit ihnen zu arbeiten. 
 
 ### Sie können die Syntax und Semantik von Python (10)
 
 ![[Pasted image 20240222101657.png]]
+![Pasted image 20240222101657](https://github.com/haaf-emily/Quizgame/assets/152873694/4ca8f1ed-5310-4d0c-b4f8-3d6ff4673848)
+
 
 Wir sind auf diese Stelle im Code besonders stolz, da sie alles abbildet was wir in den drei Wochen im Backend gemacht haben. 
 1. Zeile 75: Wir haben eine Schnittstelle mit Flask erstellt, die unsere Backend Programmierung in Python mit unsere Frontend Programmierung in TypeScript verbindet. Sie stellt die Daten für die Funktion responseCheck() bereit, sobald sie  Anfragen vom Type  POST oder OPTIONS bekommt.
@@ -78,6 +87,7 @@ Wir sind auf diese Stelle im Code besonders stolz, da sie alles abbildet was wir
 ### Sie können ein größeres Programm selbständig entwerfen, programmieren und auf Funktionsfähigkeit testen (Das Projekt im Team) (10)
 <!-- Anhand von commits zeigen, wie jeder im Projekt einen Beitrag geleistet hat -->
 ![[Pasted image 20240225150806.png]]
+![Pasted image 20240225150806](https://github.com/haaf-emily/Quizgame/assets/152873694/7f540f73-8bf5-4942-a9bc-aedcfd39a783)
 
 Das Projekt wurde von der gesamten Gruppe zu gleichen Teilen bearbeitet. Dabei haben wir die ersten Überlegungen aufgeteilt in die drei Teile: Python Konzept, Schnittstellenfindung und Oberflächen Design.
 
@@ -103,10 +113,14 @@ Dieses Projekt werden wir auch zukünftig nutzen um uns ideal auf Klausuren, die
 
 Dictionary:
 Wir haben unsere Fragen und Antworten einer XML-Datei gespeichert, für die einfachere Erstellung. Um das ganze in Python verwenden zu können haben wir es in ein Dictionary umgewandelt und damit gearbeitet. 
+![Pasted image 20240222112610](https://github.com/haaf-emily/Quizgame/assets/152873694/2907a1d8-3bad-4c0d-b96e-6b480b45e21b)
+
 ![[Pasted image 20240222112610.png]]
 Liste:
 Diese Liste benötigen wir  um  das erste Element aus der erstellten Liste zunehmen, damit das Programm funktioniert. Ohne kann das Programm nicht auf die Fragen zu greifen, da sie eine ganz andere Bezeichnung haben.
 ![[Pasted image 20240222112628.png]]
+![Pasted image 20240222112628](https://github.com/haaf-emily/Quizgame/assets/152873694/a0740ef0-bfbf-47e0-b91a-e7c907f714b7)
+
 
 
 ## METHODENKOMPETENZ (10 Punkte)
@@ -114,9 +128,17 @@ Diese Liste benötigen wir  um  das erste Element aus der erstellten Liste zuneh
 ### Die Studierenden können eine Entwicklungsumgebung verwenden um Programme zu erstellen (10)
 Wir haben in unserem Projekt folgende Umgebungen verwendet:
 - Git![[Pasted image 20240222114152.png]]
+  ![Pasted image 20240222114152](https://github.com/haaf-emily/Quizgame/assets/152873694/97bc6272-f023-4f2c-b143-004618720b1d)
+
 - Visual Studio Code![[Pasted image 20240222114210.png]]
+![Pasted image 20240222114210](https://github.com/haaf-emily/Quizgame/assets/152873694/93806d99-49fb-45ee-a5cc-1c45de3236c0)
+
 - Anaconda![[Pasted image 20240222114332.png]]
+  ![Pasted image 20240222114332](https://github.com/haaf-emily/Quizgame/assets/152873694/aa8295e1-a181-4612-9aff-4e994dba435b)
+
 - SourceTree![[Pasted image 20240222114449.png]]
+  ![Pasted image 20240222114449](https://github.com/haaf-emily/Quizgame/assets/152873694/49efb942-7e5d-4a6c-aa57-1278ae5aca69)
+
 
 Die Verwendung der verschiedenen Entwicklungsumgebungen können wir nicht objektiv darstellen bzw. begründen.
 
@@ -129,7 +151,6 @@ Da der Code von uns gemeinsam erstellt wurde hat jeder den Code verstanden und k
 
 ### Sie können existierenden Code analysieren und beurteilen. **(5)**
 Wir haben die Gruppe Wissen ist Macht bewertet und diese Bewertung finden Sie in dem Ordner Grading Wissen ist Macht
-Matrikel Nummern: 7267944, 5239938
 
 ### Sie können sich selbstständig in Entwicklungsumgebungen und Technologien einarbeiten und diese zur Programmierung und Fehlerbehebung einsetzen. (10)
 
@@ -164,10 +185,16 @@ Wir haben unsere Wissen mit folgenden Bibliotheken und Frameworks erweiter:
 	 
 	Einbindung in Python: 
 	 ![[Pasted image 20240222120453.png]]
+  	![Pasted image 20240222120453](https://github.com/haaf-emily/Quizgame/assets/152873694/a082296d-45c3-45c4-bf0f-d45f403ca5a6)
+
 	 
 	 Schnittstelle in TypeScript:![[Pasted image 20240222120532.png]]
+  					![Pasted image 20240222120532](https://github.com/haaf-emily/Quizgame/assets/152873694/e777dba6-0a2e-402a-be8d-059a161ed4e5)
+
 - Benutzung Framework React: Wir haben uns als Gruppe bewusst dazu entschieden ein Framework zu verwenden und den Umgang mit einem Webframework zu lernen. Diese ersten Kenntnisse werden uns im späteren Verlauf des Studiums nützlich sein. Da wir vorher keine Berührungspunkte damit hatten sieht unser Endergebnis gut aus. In unserem Projekt haben wir den Fokus auf das Backend gelegt und hatten wir Schwierigkeiten bei der Installation des Frameworks.
 	 ![[Pasted image 20240222121240.png]]
+  	![Pasted image 20240222121240](https://github.com/haaf-emily/Quizgame/assets/152873694/27d8b74d-daa3-454d-af4c-f307b9e8fb03)
+
 - Die weiteren Punkte auf die wir als Gruppe stolz sind werden oben beschrieben und erklärt 
 	 --> z.B Stringverarbeitung und Dictionary
 	 
